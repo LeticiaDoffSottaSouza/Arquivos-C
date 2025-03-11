@@ -4,7 +4,7 @@
 //inicio
 int main (){
     setlocale(LC_ALL,"");
-    char nome[20], sobrenome[20], cidade[20], pagamento[20];  
+    char nome[20], sobrenome[20], cidade[20], pagamento[20], pedido[60];  
     int idade, pessoas, numero, dias, opcao1, opcao2, opcao3;
     float valor;
     printf("Bem-vindo ao hotel Alika!\n");
@@ -53,9 +53,15 @@ int main (){
         printf("Ok :)");
     }
     printf("Gostaria de fazer algum pedido?:\n");
-    printf("Sim\n");
-    printf("Não\n");
-    scanf("%d", &opcao3)
+    printf("1- Sim\n");
+    printf("2- Não\n");
+    scanf("%d", &opcao3);
+    switch(opcao3){
+        case 1:
+        printf("O que gostaria de pedir?\n");
+        scanf("%s", pedido);
+        printf("Seu pedido será feito em breve!")
+    }
     return 0;
     
 }
