@@ -38,13 +38,13 @@ int main (){
         scanf("%d", &opcao2);
         switch(opcao2){
             case 1:
-            printf("Seu pedido será feito em breve!");
+            printf("Seu pedido será feito em breve!\n");
             break;
             case 2:
-            printf("Seu pedido será feito em breve!");
+            printf("Seu pedido será feito em breve!\n");
             break;
             case 3:
-            printf("Seu pedido será feito em breve!");
+            printf("Seu pedido será feito em breve!\n");
             break;
         }
         break;
@@ -60,9 +60,11 @@ int main (){
         case 1:
         printf("O que gostaria de pedir?\n");
         scanf("%s", pedido);
-        printf("Seu pedido será feito em breve!")
+        printf("Seu pedido será feito em breve!");
+        break;
         case 2: 
-        printf("Ok :)");
+        printf("Ok :) ");
+        break;
     }
     return 0;
     
