@@ -61,6 +61,8 @@ int main (){
         printf("O que gostaria de pedir?\n");
         scanf("%s", pedido);
         printf("Seu pedido será feito em breve!")
+        case 2: 
+        printf("Ok :)");
     }
     return 0;
     
