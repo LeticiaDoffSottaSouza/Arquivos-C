@@ -26,6 +26,7 @@ int main (){
     printf("O valor de sua hospedagem é de: %.2f \n", valor);
     printf("Informe a forma de pagamento: ");
     scanf("%s", pagamento);
+    do{
     printf("Selecione uma das opções:\n");
     printf("1- Gostaria de solicitar o seviço de quarto!\n");
     printf("2- No momento não quero solicitar o serviço de quarto.\n");
@@ -46,26 +47,39 @@ int main (){
             case 3:
             printf("Seu pedido será feito em breve!\n");
             break;
+            default:
+            printf("Opção inválida.\n");
         }
         break;
         
         case 2:
-        printf("Ok :)");
+        printf("Ok :)\n");
+        break;
+        
+        default:
+        printf("Opção inválida.\n");
     }
-    printf("Gostaria de fazer algum pedido?:\n");
+    printf("Gostaria de fazer algum pedido específico?:\n");
     printf("1- Sim\n");
     printf("2- Não\n");
+    printf("3- Sair\n");
     scanf("%d", &opcao3);
     switch(opcao3){
         case 1:
-        printf("O que gostaria de pedir?\n");
-        scanf("%s", pedido);
-        printf("Seu pedido será feito em breve!");
-        break;
+            printf("O que gostaria de pedir?\n");
+            scanf("%s", pedido);
+            printf("Seu pedido será feito em breve!\n");
+            break;
         case 2: 
-        printf("Ok :) ");
+            printf("Ok :) ");
+            break;
+        case 3:
+        printf("Saindo...\n");
         break;
-    }
+        
+        default:
+        printf("Opção inválida.\n");
+    } 
+    }while (opcao3 == 3);
     return 0;
-    
 }
