@@ -4,7 +4,7 @@
 
 //montagem de estrutura do struct para a variável
 typedef struct{
-    int ra;  
+    int ra;  //com o nome não deu certo
     int idade;
     float nota;
 } Aluno;
@@ -16,7 +16,7 @@ typedef struct{
     Aluno alunos[3];
     int i, raBusca, encontrou = 0;
     
-//laço de repetição para pedir o nome de 3 alunos
+//laço de repetição para pedir o ra de 3 alunos
     for (i = 0; i < 3; i ++){
         
 //"printf" para pedir os dados e "scanf" para guardar 
