@@ -190,7 +190,7 @@ void todosCadastros(){
 
 void pagamento(){
     int codigo = 0;
-    printf("Número do cadastro: ");
+    printf("ID: ");
     scanf("%d", &codigo);
     cadastros[codigo-1].valor = cadastros[codigo-1].dias * 350.00;
     printf("O valor de sua hospedagem é de: %.2f \n", cadastros[codigo-1].valor);
