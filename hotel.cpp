@@ -137,7 +137,7 @@ void servicoQuarto(){
             break;
         
         case 2:
-        printf("Iremos em breve\n");
+        printf("Ok :)\n");
         break;
         
         default:
@@ -163,7 +163,7 @@ void pedidos(){
             break;
             
         case 2: 
-            printf("Ok :)");
+            printf("Ok :)\n");
             break;
         
         default:
