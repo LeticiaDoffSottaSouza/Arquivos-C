@@ -183,7 +183,7 @@ void todosCadastros(){
         printf("Pessoas hospedadas: %d\n", cadastros[i].pessoas);
         printf("Dias: %d\n", cadastros[i].dias);
         printf("Número de telefone: %d\n", cadastros[i].numero);
-        printf("-----------------------------------------\n");
+        printf("----------------------------------\n");
     }    
     finalizaFuncao();
 }
